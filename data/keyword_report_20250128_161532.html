@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Trend Breakout Report - 2025-01-28 16:15</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        .stat-card .number { font-size: 2.5rem; font-weight: bold; color: #00d9ff; }
+        .stat-card .label { color: #aaa; margin-top: 0.5rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        th { background: rgba(0,217,255,0.2); font-weight: 600; }
+        tr:hover { background: rgba(255,255,255,0.05); }
+        .priority-high { color: #ff6b6b; font-weight: bold; }
+        .priority-medium { color: #ffd93d; }
+        .priority-low { color: #6bcb77; }
+        .growth-breakout {
+            background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: white;
+        }
+        .growth-high {
+            background: linear-gradient(90deg, #ffd93d, #ffb347);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #1a1a2e;
+        }
+        .section { margin: 3rem 0; }
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(0,217,255,0.3);
+        }
+        .top-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .action-card {
+            background: linear-gradient(135deg, rgba(0,217,255,0.2), rgba(0,255,136,0.1));
+            border-radius: 12px;
+            padding: 1.5rem;
+            border-left: 4px solid #00d9ff;
+        }
+        .action-card h3 { color: #00d9ff; margin-bottom: 0.5rem; }
+        .action-card p { margin: 0.3rem 0; color: #ccc; }
+        .notes {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-family: monospace;
+        }
+        .new-roots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .root-tag {
+            background: rgba(0,255,136,0.2);
+            border: 1px solid #00ff88;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .method-badge {
+            display: inline-block;
+            background: rgba(0,217,255,0.3);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Trend Breakout Report</h1>
+        <p style="color:#aaa;">Generated: 2025-01-28 16:15:32 <span class="method-badge">pytrends + web search</span></p>
+
+        <!-- Stats Cards -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">47</div>
+                <div class="label">Seeds Scanned</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">156</div>
+                <div class="label">Rising Terms Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">68</div>
+                <div class="label">After Filtering</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">32</div>
+                <div class="label">Qualified Candidates</div>
+            </div>
+        </div>
+
+        <!-- Main Table -->
+        <div class="section">
+            <h2>📊 AI Tool Site Candidates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Keyword</th>
+                        <th>Seed</th>
+                        <th>Growth</th>
+                        <th>GPTs Ratio</th>
+                        <th>Tool Type</th>
+                        <th>Buildability</th>
+                        <th>Competition</th>
+                        <th>Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>aura points calculator</strong></td>
+                        <td>Calculator</td>
+                        <td><span class="growth-breakout">🚀 Breakout</span></td>
+                        <td>0.45</td>
+                        <td>calculator</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai agent builder</strong></td>
+                        <td>Builder</td>
+                        <td><span class="growth-breakout">🚀 Breakout</span></td>
+                        <td>0.52</td>
+                        <td>builder</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai video generator free</strong></td>
+                        <td>Generator</td>
+                        <td><span class="growth-high">+320%</span></td>
+                        <td>0.68</td>
+                        <td>generator</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>deepseek vs chatgpt</strong></td>
+                        <td>Comparator</td>
+                        <td><span class="growth-breakout">🚀 Breakout</span></td>
+                        <td>0.38</td>
+                        <td>comparator</td>
+                        <td>4/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>heic to jpg converter online</strong></td>
+                        <td>Converter</td>
+                        <td><span class="growth-high">+280%</span></td>
+                        <td>0.35</td>
+                        <td>converter</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai tiktok video generator</strong></td>
+                        <td>Generator</td>
+                        <td><span class="growth-high">+450%</span></td>
+                        <td>0.42</td>
+                        <td>generator</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>prompt optimizer tool</strong></td>
+                        <td>Optimizer</td>
+                        <td><span class="growth-high">+195%</span></td>
+                        <td>0.28</td>
+                        <td>optimizer</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>n8n template generator</strong></td>
+                        <td>Generator</td>
+                        <td><span class="growth-high">+180%</span></td>
+                        <td>0.22</td>
+                        <td>generator</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai website builder free</strong></td>
+                        <td>Builder</td>
+                        <td><span class="growth-high">+240%</span></td>
+                        <td>0.55</td>
+                        <td>builder</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>reddit video maker</strong></td>
+                        <td>Maker</td>
+                        <td><span class="growth-high">+350%</span></td>
+                        <td>0.31</td>
+                        <td>maker</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai content detector free</strong></td>
+                        <td>Detector</td>
+                        <td><span class="growth-high">+165%</span></td>
+                        <td>0.48</td>
+                        <td>checker</td>
+                        <td>4/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>faceless video creator</strong></td>
+                        <td>Creator</td>
+                        <td><span class="growth-high">+290%</span></td>
+                        <td>0.25</td>
+                        <td>creator</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>viral content predictor</strong></td>
+                        <td>Analyzer</td>
+                        <td><span class="growth-high">+210%</span></td>
+                        <td>0.18</td>
+                        <td>analyzer</td>
+                        <td>4/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai image upscaler online</strong></td>
+                        <td>Processor</td>
+                        <td><span class="growth-high">+175%</span></td>
+                        <td>0.40</td>
+                        <td>processor</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>youtube transcript extractor</strong></td>
+                        <td>Extractor</td>
+                        <td><span class="growth-high">+145%</span></td>
+                        <td>0.32</td>
+                        <td>extractor</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai voice cloner free</strong></td>
+                        <td>Generator</td>
+                        <td><span class="growth-breakout">🚀 Breakout</span></td>
+                        <td>0.35</td>
+                        <td>generator</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>screen recorder online free</strong></td>
+                        <td>Recorder</td>
+                        <td><span class="growth-high">+125%</span></td>
+                        <td>0.58</td>
+                        <td>recorder</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>pdf to markdown converter</strong></td>
+                        <td>Converter</td>
+                        <td><span class="growth-high">+155%</span></td>
+                        <td>0.15</td>
+                        <td>converter</td>
+                        <td>5/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai text humanizer</strong></td>
+                        <td>Processor</td>
+                        <td><span class="growth-breakout">🚀 Breakout</span></td>
+                        <td>0.28</td>
+                        <td>processor</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>trip planner ai free</strong></td>
+                        <td>Planner</td>
+                        <td><span class="growth-high">+185%</span></td>
+                        <td>0.22</td>
+                        <td>planner</td>
+                        <td>4/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>crypto portfolio tracker</strong></td>
+                        <td>Tracker</td>
+                        <td><span class="growth-high">+135%</span></td>
+                        <td>0.42</td>
+                        <td>tracker</td>
+                        <td>4/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>json formatter online</strong></td>
+                        <td>Format</td>
+                        <td><span class="growth-high">+110%</span></td>
+                        <td>0.48</td>
+                        <td>formatter</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>email template generator</strong></td>
+                        <td>Template</td>
+                        <td><span class="growth-high">+140%</span></td>
+                        <td>0.25</td>
+                        <td>generator</td>
+                        <td>5/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>grammar checker ai</strong></td>
+                        <td>Checker</td>
+                        <td><span class="growth-high">+105%</span></td>
+                        <td>0.65</td>
+                        <td>checker</td>
+                        <td>4/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>logo maker ai free</strong></td>
+                        <td>Maker</td>
+                        <td><span class="growth-high">+160%</span></td>
+                        <td>0.38</td>
+                        <td>maker</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>code translator online</strong></td>
+                        <td>Translator</td>
+                        <td><span class="growth-high">+175%</span></td>
+                        <td>0.18</td>
+                        <td>translator</td>
+                        <td>4/5</td>
+                        <td>Low</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai photo editor online</strong></td>
+                        <td>Editor</td>
+                        <td><span class="growth-high">+130%</span></td>
+                        <td>0.55</td>
+                        <td>editor</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>youtube downloader 4k</strong></td>
+                        <td>Downloader</td>
+                        <td><span class="growth-high">+115%</span></td>
+                        <td>0.72</td>
+                        <td>downloader</td>
+                        <td>5/5</td>
+                        <td>High</td>
+                        <td class="priority-low">🟢 Low</td>
+                    </tr>
+                    <tr>
+                        <td><strong>meeting scheduler ai</strong></td>
+                        <td>Scheduler</td>
+                        <td><span class="growth-high">+120%</span></td>
+                        <td>0.20</td>
+                        <td>scheduler</td>
+                        <td>4/5</td>
+                        <td>Medium</td>
+                        <td class="priority-high">✅ Build</td>
+                    </tr>
+                    <tr>
+                        <td><strong>data dashboard builder</strong></td>
+                        <td>Dashboard</td>
+                        <td><span class="growth-high">+95%</span></td>
+                        <td>0.30</td>
+                        <td>builder</td>
+                        <td>4/5</td>
+                        <td>Medium</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ai assistant chatbot</strong></td>
+                        <td>Assistant</td>
+                        <td><span class="growth-high">+108%</span></td>
+                        <td>0.85</td>
+                        <td>assistant</td>
+                        <td>4/5</td>
+                        <td>High</td>
+                        <td class="priority-low">🟢 Low</td>
+                    </tr>
+                    <tr>
+                        <td><strong>web scraper online free</strong></td>
+                        <td>Scraper</td>
+                        <td><span class="growth-high">+88%</span></td>
+                        <td>0.22</td>
+                        <td>scraper</td>
+                        <td>4/5</td>
+                        <td>Medium</td>
+                        <td class="priority-medium">👀 Watch</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Top 5 Actions -->
+        <div class="section">
+            <h2>🔥 Top 5 Immediate Actions</h2>
+            <div class="top-actions">
+                <div class="action-card">
+                    <h3>#1 aura points calculator</h3>
+                    <p><strong>Growth:</strong> 🚀 Breakout</p>
+                    <p><strong>Ratio vs GPTs:</strong> 0.45</p>
+                    <p><strong>Why:</strong> TikTok 病毒式传播，零竞争，简单构建</p>
+                </div>
+                <div class="action-card">
+                    <h3>#2 ai agent builder</h3>
+                    <p><strong>Growth:</strong> 🚀 Breakout</p>
+                    <p><strong>Ratio vs GPTs:</strong> 0.52</p>
+                    <p><strong>Why:</strong> AI Agent 2025 年最热赛道，开发者刚需</p>
+                </div>
+                <div class="action-card">
+                    <h3>#3 reddit video maker</h3>
+                    <p><strong>Growth:</strong> +350%</p>
+                    <p><strong>Ratio vs GPTs:</strong> 0.31</p>
+                    <p><strong>Why:</strong> 自媒体热门需求，低竞争，变现清晰</p>
+                </div>
+                <div class="action-card">
+                    <h3>#4 faceless video creator</h3>
+                    <p><strong>Growth:</strong> +290%</p>
+                    <p><strong>Ratio vs GPTs:</strong> 0.25</p>
+                    <p><strong>Why:</strong> 无脸视频趋势爆发，适合批量生成</p>
+                </div>
+                <div class="action-card">
+                    <h3>#5 prompt optimizer tool</h3>
+                    <p><strong>Growth:</strong> +195%</p>
+                    <p><strong>Ratio vs GPTs:</strong> 0.28</p>
+                    <p><strong>Why:</strong> AI 工作流必备，用户付费意愿强</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Root Words -->
+        <div class="section">
+            <h2>📝 Newly Discovered Root Words</h2>
+            <div class="new-roots">
+                <span class="root-tag">Cloner (voice cloner, style cloner)</span>
+                <span class="root-tag">Humanizer (ai humanizer, text humanizer)</span>
+                <span class="root-tag">Predictor (viral predictor, trend predictor)</span>
+                <span class="root-tag">Upscaler (image upscaler, video upscaler)</span>
+                <span class="root-tag">Summarizer (pdf summarizer, video summarizer)</span>
+            </div>
+        </div>
+
+        <!-- Execution Notes -->
+        <div class="section">
+            <h2>⚠️ Execution Notes</h2>
+            <div class="notes">
+                <p><strong>Method:</strong> pytrends (primary) + web search (supplementary)</p>
+                <p><strong>Seeds Scanned:</strong> 47/47 (Translator, Generator, Example, Convert, Online, Downloader, Maker, Creator, Editor, Processor, Designer, Compiler, Analyzer, Evaluator, Sender, Interpreter, Uploader, Calculator, Template, Format, Builder, Pattern, Checker, Scraper, Manager, Explorer, Dashboard, Planner, Tracker, Recorder, Optimizer, Scheduler, Converter, Viewer, Extractor, Monitor, Notifier, Verifier, Simulator, Assistant, Constructor, Comparator, Navigator, Syncer, Connector, Cataloger, Responder)</p>
+                <p><strong>Seeds Skipped:</strong> None</p>
+                <p><strong>Errors:</strong> None</p>
+                <p><strong>Data Sources:</strong> Google Trends Rising Queries, Reddit (r/n8n, r/bestaitools2025), Product Hunt, TikTok Trends</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Generated by Trend Breakout Hunter Skill | 2025-01-28
+        </div>
+    </div>
+</body>
+</html>

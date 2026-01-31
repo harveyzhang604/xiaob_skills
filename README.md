@@ -2,9 +2,35 @@
 
 自动化蓝海关键词猎取系统，专注发现低竞争、高需求的AI工具关键词机会。
 
+## 📌 版本选择
+
+### 🚀 Lite 版（推荐，快速版）
+**特点**：融合 [Yuanbao Skills](https://github.com/harveyzhang604/yuanbao_skills) 的优点
+- ✅ **DuckDuckGo SERP** - 避免 Google 限频，速度快
+- ✅ **GPTs Benchmark** - 用 "GPTs" 作为热度基准
+- ✅ **加权意图评分** - 痛点+3分，工具+2分
+- ✅ **简化决策矩阵** - BUILD NOW / WATCH / DROP
+- ⏱️ **运行时间**：10-15分钟
+- 📦 **文件**：`profit_hunter_lite.py`
+
+### 🔬 Deep 版（深度版）
+**特点**：我们的原创深度验证系统
+- 🔍 **Reddit 痛点挖掘** - 搜索真实用户抱怨
+- 📊 **Google SERP 分析** - 检测市场空白
+- ✅ **综合需求验证** - 多维度评分（0-100分）
+- ⏱️ **运行时间**：1小时
+- 📦 **文件**：`profit_hunter_ultimate.py` + `profit_hunter_deep_validation.py`
+
 ## ✨ 核心功能
 
-### V3.0 Deep Validation 新增
+### V4.0 Lite (NEW) - 融合版
+- 🚀 **DuckDuckGo SERP 分析** - 轻量级，不限频
+- 📈 **GPTs Benchmark 对比** - 只保留热度 ≥5% GPTs 的词
+- 🎯 **加权意图评分系统** - 痛点（+3分）> 工具（+2分）> 对比（+2分）
+- 📏 **词长度限制** - 只保留 3-8 词的长尾词
+- 🎨 **简化决策矩阵** - BUILD NOW / WATCH / DROP
+
+### V3.0 Deep Validation - 深度版
 - 🔍 **Reddit 痛点挖掘** - 搜索真实用户抱怨和需求
 - 📊 **Google SERP 分析** - 检测市场空白（论坛多但工具少）
 - ✅ **综合需求验证** - 多维度评分（0-100分）
@@ -14,24 +40,41 @@
 ### 基础功能
 - 📝 Google Autocomplete 关键词挖掘
 - 📈 Google Trends 趋势分析
-- 🔥 GPTs 基准对比（vs "GPTs" 热度）
-- 🎯 用户意图识别（calculate, convert, check 等）
-- 🏆 SERP 竞争分析（降维打击检测）
-- ⏰ 定时自动运行（每天4次）
+- 🏆 SERP 竞争分析
+- ⏰ 定时自动运行
 
 ## 🚀 快速开始
 
-### 1. 安装依赖
+### 选项 A: Lite 版（快速，推荐）
+
+
+#### 1. 安装依赖
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. 准备种子词
+#### 2. 准备种子词
 编辑 `words.md`，添加你的种子关键词（如 calculator, converter, checker）
 
-### 3. 运行分析
+#### 3. 运行
+```bash
+# Windows
+run_lite.bat
 
-#### 方式一：立即运行一次（测试）
+# Linux/Mac
+python profit_hunter_lite.py
+```
+
+#### 4. 查看结果
+打开 `data/reports/profit_hunter_lite_*.html`
+
+---
+
+### 选项 B: Deep 版（深度分析）
+
+#### 1-2. 同上
+
+#### 3. 运行
 ```bash
 # Windows
 run_deep_analysis.bat
@@ -41,13 +84,27 @@ python profit_hunter_ultimate.py --trends --max 100
 python profit_hunter_deep_validation.py --input data/ultimate_final_results.csv --max 30
 ```
 
-#### 方式二：定时运行（每天4次）
+#### 4. 查看结果
+打开 `data/reports/deep_validation_report_*.html`
+
+---
+
+### 选项 C: 定时运行（每天4次）
 ```bash
 python scheduler_deep.py
 ```
 
-### 4. 查看结果
-打开 `data/reports/deep_validation_report_*.html` 查看详细报告
+## 📊 版本对比
+
+| 特性 | Lite 版 🚀 | Deep 版 🔬 |
+|------|-----------|-----------|
+| **运行时间** | 10-15分钟 | 1小时 |
+| **SERP 分析** | DuckDuckGo（快速） | Playwright + Google（准确） |
+| **需求验证** | GPTs Benchmark | Reddit + SERP 深度验证 |
+| **评分系统** | 加权意图评分 | 综合验证评分（0-100） |
+| **决策矩阵** | BUILD / WATCH / DROP | 多维度评分 + 决策建议 |
+| **适用场景** | 快速测试、日常监控 | 深度研究、重要决策 |
+| **推荐人群** | 快速迭代、初学者 | 深度分析、专业用户 |
 
 ## 📊 输出结果
 

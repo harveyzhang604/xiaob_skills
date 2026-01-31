@@ -1,8 +1,50 @@
-.agent/
-.agents/
-.claude/
-node_modules/
-.env
-.env.local
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+
+# 测试数据和结果
+data/*.csv
+data/reports/*.html
+data/validation/*.csv
+data/screenshots/
+
+# 测试脚本
+test_*.py
+*_test.py
+
+# 临时文档
+*_SUMMARY.md
+*_UPGRADE.md
+*_COMPLETE.md
+CONFIG_QUICK_REF.md
+DEPLOYMENT_SUMMARY.md
+FINAL_UPGRADE_V3.md
+FIND_SKILLS_GUIDE.md
+TRENDS_RATE_LIMIT.md
+TROUBLESHOOTING.md
+ULTIMATE_*.md
+words_test.md
+
+# 旧版本脚本
+profit_hunter_pro.py
+scheduler.py
+run_profit_hunter.bat
+setup_scheduler.bat
+trend_hunter_*.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-nul
+Thumbs.db
